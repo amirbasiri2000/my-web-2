@@ -41,3 +41,89 @@ searchBoxIcon.addEventListener('click',function(){
     searchBoxForm.classList.remove('d-none');
 })
 
+// slider
+
+const angleRight = document.getElementById('angle-right');
+const angleLeft = document.getElementById('angle-left');
+let sliderContent = [...document.querySelector('.slider .slider-content').children]
+let item = document.querySelectorAll('.slider .slider-content .item');
+
+let index = 0;
+
+
+angleRight.addEventListener('click',function(){
+    index++;
+    if(index > sliderContent.length -1 ){
+        index =0
+    }
+    sliderContent.forEach(element => {
+        element.classList.remove('active');
+    })
+    item[index].classList.add('active');
+})
+
+angleLeft.addEventListener('click',function(){
+    index--;
+    if(index < 0 ){
+        index = sliderContent.length -1 ;
+    }
+    sliderContent.forEach(element => {
+        element.classList.remove('active');
+    })
+    item[index].classList.add('active');
+})
+setInterval(function(){
+    index++;
+    if(index > sliderContent.length -1 ){
+        index =0
+    }
+    sliderContent.forEach(element => {
+        element.classList.remove('active');
+    })
+    item[index].classList.add('active'
+)},3000)
+
+// scroll window
+
+let header = document.querySelector('.header');
+let topHeader = document.querySelector('.header .custom-container-fluid');
+
+window.onscroll = () => {
+   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+       topHeader.style.display = 'none';
+   }
+   else{
+       topHeader.style.display = 'flex';
+   }
+}
+
+
+
+
+function scrollDetect(){
+    var lastScroll = 0;
+  
+    window.onscroll = function() {
+        let currentScroll = document.documentElement.scrollTop || document.body.scrollTop; // Get Current Scroll Value
+  
+        if (currentScroll > 0 && lastScroll <= currentScroll){
+          lastScroll = currentScroll;
+          header.style.display = 'none';
+        }else if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
+          lastScroll = currentScroll;
+          topHeader.style.display = 'none';
+          header.style.display = 'block';
+        }
+        else if(document.body.scrollTop < 200 || document.documentElement.scrollTop < 200){
+            topHeader.style.display = 'flex';
+            header.style.display = 'block';
+      }
+        else{
+            topHeader.style.display = 'flex';
+        }
+    };
+  }
+  
+  
+  scrollDetect();
+
