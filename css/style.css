@@ -309,3 +309,117 @@ element.style {
   }
 }
 /* -------------------End Slider-------------------- */
+/* -------------------articalls---------------------- */
+
+.articalls{
+
+}
+.articalls .title-articalls{
+  text-align: center;
+  margin-top: 50px;
+  /* background-color: rgba(255, 255, 0, 0.349); */
+}
+.articalls .title-articalls h2{
+  color: #be8e4b;
+}
+.articalls .title-articalls p{
+  margin: 20px 0 60px 0;
+}
+.articalls .product-articalls{
+  margin-top: 40px;
+}
+.articalls .product-articalls .product-content{
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 130px;
+}
+.articalls .product-articalls .product-content .img-box{
+  height: 230px;
+}
+.articalls .product-articalls .product-content .img-box img{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
+}
+.articalls .product-articalls .product-content .title-box{
+  background-color: #ffffff;
+  box-shadow: 2px -1px 8px 3px #bdbdbd;
+  border-radius: 0 0 10px 10px;
+  -webkit-border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  -ms-border-radius: 0 0 10px 10px;
+  -o-border-radius: 0 0 10px 10px;
+  height: 167px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 143px;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+.articalls .product-articalls .product-content:hover .title-box{
+  top: 200px;
+}
+.articalls .product-articalls .product-content .title-box .title-header h3{
+  background-color: #9c7a4b;
+  display: inline-block;
+  color: #fff;
+  font-size: 1em;
+  padding: 3px 5px;
+  border-radius: 4px;
+  font-weight: 400;
+  cursor: pointer;
+  margin: 1px;
+}
+.articalls .product-articalls .product-content .title-box .title-main p{
+  font-size: 1.1em;
+  margin: 10px 20px;
+}
+.articalls .product-articalls .product-content .title-box .categore{
+  margin: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.articalls .product-articalls .product-content .title-box .categore .like i{
+  font-size: 1.3em;
+  color: #b9b9b9;
+  cursor: pointer;
+}
+.likeIcontBackground{
+  color: red !important;
+}
+.articalls .product-articalls .product-content .title-box .categore .like span{
+  font-size: .9em;
+}
+.articalls .product-articalls .product-content .title-box .categore .title button{
+  border: 1px solid #222;
+  background-color: #000000a3;
+  color: #fff;
+  border-radius: 3px;
+}
+.articalls .show-more-articalls a{
+  color: #9c7a4b;
+  border: 2px solid #9c7a4b;
+  font-size: 0.8em;
+  margin-bottom: 40px;
+  transition: al .6s;
+  -webkit-transition: al .6s;
+  -moz-transition: al .6s;
+  -ms-transition: al .6s;
+  -o-transition: al .6s;
+}
+.articalls .show-more-articalls a:hover{
+  background-color: #9c7a4b;
+  color: #fff;
+}
+/* -------------------End servisec---------------------- */

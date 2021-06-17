@@ -127,3 +127,20 @@ function scrollDetect(){
   
   scrollDetect();
 
+//   like icon
+
+var likeIcon = document.getElementById('likeIconSlider1');
+var likeCounter = document.getElementById('span');
+var n = likeCounter.innerHTML;
+
+
+likeIcon.addEventListener('click',function(){
+    likeIcon.classList.toggle('likeIcontBackground');
+    if(likeIcon.classList.contains('likeIcontBackground')){
+        n++;
+        likeCounter.innerHTML = n
+    }else{
+        n--;
+        likeCounter.innerHTML = n
+    }
+})
