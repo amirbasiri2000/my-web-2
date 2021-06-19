@@ -42,6 +42,10 @@
   .slider .angle-right {
     right: 30px;
   }
+  /* services */
+  .services .servoces-content{
+    height: 120vh;
+  }
 }
 
 /*  */
@@ -152,5 +156,12 @@
     background-color: none;
     color: #aca2a2;
     border: none;
+  }
+  /* services */
+  .services .servoces-content .cover-services .services-product .product .product-box{
+    width: 80%;
+  }
+  .services .servoces-content{
+    height: 140vh;
   }
 }
