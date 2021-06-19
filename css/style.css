@@ -578,19 +578,23 @@ element.style {
   
 }
 .luxury-life .luxury-life-content .luxury-life-title{
-  
+  margin-top: 60px;
+  margin-bottom: 100px;
 }
 .luxury-life .luxury-life-content .luxury-life-title h2{
-  
+  text-transform: uppercase;
+  color: #9c7a4b;
 }
 .luxury-life .luxury-life-content .luxury-life-title span{
-  
+  word-spacing: 2px;
+  font-size: 1.4em;
+  margin: 5px 10px;
 }
 .luxury-life .luxury-life-content .luxury-life-main{
   
 }
 .luxury-life .luxury-life-content .luxury-life-main .life-item{
-  
+
 }
 .luxury-life .luxury-life-content .luxury-life-main .life-item .image{
   
@@ -599,8 +603,26 @@ element.style {
   width: 100%;
 }
 .luxury-life .luxury-life-content .luxury-life-main .life-item .title{
-  
+  padding: 20px 50px;
+}
+.luxury-life .luxury-life-content .luxury-life-main .life-item .title h4{
+  font-size: 1.5em;
+  padding-bottom: 20px;
 }
 .luxury-life .luxury-life-content .luxury-life-main .life-item .title p{
   
+}
+.luxury-life .luxury-life-content .luxury-life-main .life-item .title a{
+  border-color: #9c7a4b;
+  color: #9c7a4b;
+  padding: 5px 35px;
+  transition: all .6s;
+  -webkit-transition: all .6s;
+  -moz-transition: all .6s;
+  -ms-transition: all .6s;
+  -o-transition: all .6s; 
+}
+.luxury-life .luxury-life-content .luxury-life-main .life-item .title a:hover{
+  background-color: #9c7a4b;
+  color: #fff;
 }

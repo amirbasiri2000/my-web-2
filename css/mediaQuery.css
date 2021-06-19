@@ -165,3 +165,8 @@
     height: 140vh;
   }
 }
+@media screen and (max-width: 960px) {
+  .luxury-life .luxury-life-content .luxury-life-main .life-item{
+    margin-top: 60px !important;
+  }
+}
