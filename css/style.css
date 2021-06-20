@@ -30,8 +30,19 @@
 }
 .header .top-header .top-header-right {
   margin: 10px 0;
+  
 }
-
+.header .top-header .top-header-right ul li a i{
+  color: #9c7a4b;
+  font-size: 1em;
+  border: 2px solid ;
+  padding: 5px 6px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
 .header .top-header .top-header-left ul li a i {
   color: #aa885a;
 }
@@ -502,9 +513,7 @@ element.style {
   height: 100%;
 }
 /* ----------subscrib------------- */
-.subscrib {
 
-}
 .subscrib .subscrib-content{
   background:url(../img/subscrib/s1.jpg) no-repeat;
   display: flex;
@@ -514,9 +523,6 @@ element.style {
   text-align: center;
   margin-top: 80px;
   padding: 40px 0;
-}
-.subscrib .subscrib-content .subscrib-title{
-
 }
 .subscrib .subscrib-content .subscrib-title h2{
   color: #9c7a4b;
@@ -549,9 +555,7 @@ element.style {
 .subscrib .subscrib-content .subscrib-form-group form label{
   margin-top: 30px;
 }
-.subscrib .subscrib-content .subscrib-form-group form label input[type="checkbox"]{
-  
-}
+
 .subscrib .subscrib-content .subscrib-form-group form label span{
   color: #fff;
   font-size: .7em;
@@ -571,12 +575,7 @@ element.style {
   color: #fff;
 }
 /* ------luxury life-------- */
-.luxury-life{
-  
-}
-.luxury-life .luxury-life-content{
-  
-}
+
 .luxury-life .luxury-life-content .luxury-life-title{
   margin-top: 60px;
   margin-bottom: 100px;
@@ -590,15 +589,6 @@ element.style {
   font-size: 1.4em;
   margin: 5px 10px;
 }
-.luxury-life .luxury-life-content .luxury-life-main{
-  
-}
-.luxury-life .luxury-life-content .luxury-life-main .life-item{
-
-}
-.luxury-life .luxury-life-content .luxury-life-main .life-item .image{
-  
-}
 .luxury-life .luxury-life-content .luxury-life-main .life-item .image img{
   width: 100%;
 }
@@ -609,9 +599,7 @@ element.style {
   font-size: 1.5em;
   padding-bottom: 20px;
 }
-.luxury-life .luxury-life-content .luxury-life-main .life-item .title p{
-  
-}
+
 .luxury-life .luxury-life-content .luxury-life-main .life-item .title a{
   border-color: #9c7a4b;
   color: #9c7a4b;
@@ -719,4 +707,197 @@ footer .footer-bottom-content{
 }
 footer .footer-bottom-content span{
   color: #b3aeae;
+}
+/* ------------login & Register---------- */
+.login-register{
+  background-color: rgba(0, 0, 0, 0.801);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: none;
+  animation: fade 1s;
+  -webkit-animation: fade 1s;
+}
+.login-register .close-icon{
+  position: absolute;
+  top: 100px;
+  right: 150px;
+  padding: 10px;
+}
+.login-register .close-icon i{
+  font-size: 2em;
+  color: #b3aeae;
+  cursor: pointer;
+}
+.login-box{
+  margin-top: 100px;
+  animation: fade 1s;
+  -webkit-animation: fade 1s;
+}
+.login-box h3{
+  text-align: center;
+  font-size: 2em;
+  color: #9c7a4b;
+}
+.login-box form label.user-name{
+  display: block;
+  color: #9c7a4b;
+  margin: 20px 0 10px 0;
+}
+.login-box form input[type="text"] {
+  display: block;
+  border: 2px solid #9c7a4b;
+  margin-top: 10px;
+  border-radius: 8px;
+  padding: 5px 20px;
+  font-size: .9em;
+  width: 300px;
+  outline: none;
+  font-size: 1.1em;
+}
+.login-box form label.password{
+  display: block;
+  color: #9c7a4b;
+  margin: 20px 0 10px 0;
+}
+.login-box form input[type="password"]{
+  display: block;
+  border: 2px solid #9c7a4b;
+  margin-top: 10px;
+  border-radius: 8px;
+  padding: 5px 20px;
+  font-size: .9em;
+  width: 300px;
+  outline: none;
+  margin-bottom: 30px;
+  font-size: 1.1em;
+}
+.login-box form label.checkbox{
+  color: #b3aeae;
+}
+.login-box span{
+  display: block;
+  color: #948787;
+}
+.login-box span a{
+  color: rgb(110, 36, 179);
+}
+.login-box .btn-box{
+  text-align: right;
+  margin: 60px 0;
+}
+.login-box .btn-box button{
+  width: 80px;
+  border: 2px solid #9c7a4b;
+  outline: none;
+  border-radius: 5px;
+  color: #9c7a4b;
+  padding: 5px 0;
+  font-size: 1.2em;
+  margin-right: 20px;
+  text-transform: capitalize;
+  transition:all .6s;
+  -webkit-transition:all .6s;
+  -moz-transition:all .6s;
+  -ms-transition:all .6s;
+  -o-transition:all .6s;
+}
+.login-box .btn-box button:hover{
+  background-color:#9c7a4b;
+  color: #fff;
+}
+/*---------Register----------  */
+
+.register-box{
+  margin-top: 100px;
+  display: none;
+  animation: fade 1s;
+  -webkit-animation: fade 1s;
+}
+.register-box h3{
+  text-align: center;
+  font-size: 2em;
+  color: #9c7a4b;
+}
+.register-box form{
+  
+}
+.register-box form label.user-name{
+  display: block;
+  color: #9c7a4b;
+  margin: 20px 0 10px 0;
+}
+.register-box form input[type="text"] {
+  display: block;
+  border: 2px solid #9c7a4b;
+  margin-top: 10px;
+  border-radius: 8px;
+  padding: 5px 20px;
+  font-size: .9em;
+  width: 300px;
+  outline: none;
+  font-size: 1.1em;
+}
+.register-box form label.password{
+  display: block;
+  color: #9c7a4b;
+  margin: 20px 0 10px 0;
+}
+.register-box form input[type="password"]{
+  display: block;
+  border: 2px solid #9c7a4b;
+  margin-top: 10px;
+  border-radius: 8px;
+  padding: 5px 20px;
+  font-size: .9em;
+  width: 300px;
+  outline: none;
+  margin-bottom: 30px;
+  font-size: 1.1em;
+}
+.register-box form label.checkbox{
+  color: #b3aeae;
+}
+.register-box span{
+  display: block;
+  color: #948787;
+}
+.register-box span a{
+  color: rgb(110, 36, 179);
+}
+.register-box .btn-box{
+  text-align: right;
+  margin: 60px 0;
+}
+.register-box .btn-box button{
+  width: 80px;
+  border: 2px solid #9c7a4b;
+  outline: none;
+  border-radius: 5px;
+  color: #9c7a4b;
+  padding: 5px 10px;
+  font-size: 1.2em;
+  margin-right: 20px;
+  text-transform: capitalize;
+  transition:all .6s;
+  -webkit-transition:all .6s;
+  -moz-transition:all .6s;
+  -ms-transition:all .6s;
+  -o-transition:all .6s;
+}
+.register-box .btn-box button:hover{
+  background-color:#9c7a4b;
+  color: #fff;
+}
+@keyframes fadeOut{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
 }

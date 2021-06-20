@@ -144,3 +144,31 @@ likeIcon.addEventListener('click',function(){
         likeCounter.innerHTML = n
     }
 })
+// login & register
+
+let closeLogin = document.querySelector('.login-register .close-icon');
+let loginIcon = document.querySelector('.header .top-header .top-header-left ul li a i');
+let loginRegister = document.querySelector('.login-register');
+let register = document.querySelector('.login-box span a ');
+let login = document.querySelector('.register-box span a');
+let loginBox = document.querySelector('.login-box');
+let registerBox = document.querySelector('.register-box');
+
+
+
+loginIcon.addEventListener('click',function(){
+    loginRegister.style.display = 'block';
+});
+
+closeLogin.addEventListener('click',function(){
+    loginRegister.style.display = 'none';
+});
+
+register.addEventListener('click',function(){
+    loginBox.style.display = 'none';
+    registerBox.style.display = 'block';
+});
+login.addEventListener('click',function(){
+    registerBox.style.display = 'none';
+    loginBox.style.display = 'block';
+});
