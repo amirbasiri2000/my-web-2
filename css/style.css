@@ -624,5 +624,99 @@ element.style {
 }
 .luxury-life .luxury-life-content .luxury-life-main .life-item .title a:hover{
   background-color: #9c7a4b;
-  color: #fff;
+  color: rgb(189, 177, 177);
+}
+/*---------------- footer--------------- */
+footer{
+  position: relative;
+  bottom: 0;
+  left: 0;
+  margin-top: 100px;
+  background: url(../img/footer/f1.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+footer .footer-background-cover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(29, 29, 27, 0.712);
+  z-index:-1;
+  width: 100%;
+  height: 100%;
+}
+footer .footer-content{
+  padding: 80px 50px;
+  z-index: 200;
+  border-bottom: 2px solid #fff;
+}
+footer .footer-left{
+  text-align: center;
+}
+footer .footer-left img{
+  width: 100px;
+  margin-bottom: 30px;
+}
+footer .footer-left a{
+  color: #9c7a4b !important;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  
+}
+footer .footer-left p{
+  color: #b3aeae;
+  margin-top: 30px;
+}
+
+footer .quick-menu{
+  text-align: center;
+  margin-top: 25px;
+}
+footer .quick-menu h3{
+  color: #9c7a4b;
+
+}
+footer .quick-menu ul{
+  margin-top: 20px;
+}
+footer .quick-menu ul li{
+  display: block;
+  
+}
+footer .quick-menu ul li a{
+  font-size: 1.3em;
+  color: #b3aeae;
+  text-transform: capitalize;
+}
+footer .footer-web-icon {
+  text-align: center;
+}
+footer .footer-web-icon h3{
+  color: #9c7a4b;
+  margin-top: 25px;
+}
+footer .footer-web-icon a{
+  font-size: 2em;
+}
+footer .footer-web-icon a i{
+  margin-top: 70px;
+  color: #9c7a4b;
+  border: 2px solid ;
+  padding:  10px 9px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+footer .footer-bottom-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+footer .footer-bottom-content span{
+  color: #b3aeae;
 }
